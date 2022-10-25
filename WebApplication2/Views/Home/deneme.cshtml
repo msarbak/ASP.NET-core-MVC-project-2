@@ -88,3 +88,29 @@
 {
     <h4> @ogr </h4>
 }
+
+@{
+    int gun = Convert.ToInt32(DateTime.Now.DayOfWeek);
+    string gunadi = ""; 
+    switch(gun) {
+        case 1:
+            gunadi = "Pazartesi";
+            break;
+        case 2:
+            gunadi = "Sali";
+            break;
+        case 3:
+            gunadi = "Carsamba";
+            break;
+        case 4:
+            gunadi = "Persembe";
+            break;
+        case 5:
+            gunadi = "Cuma";
+            break;
+        default:
+            gunadi = "Tatilgunu";
+            break;
+    }
+
+}
