@@ -46,4 +46,10 @@
 } 
 <br/>
 
+@if(DateTime.IsLeapYear(DateTime.Now.Year)){
+    //artik yil-> isLeapYear
+    @:Artik Yil
+} else {
+    @:Artik Yil <b>Degil!<b/>
+}
 
