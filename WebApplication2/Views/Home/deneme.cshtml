@@ -14,6 +14,7 @@
 @{
     var tarih = DateTime.Now.ToShortDateString();
     var ders = "Web Progranlama";
+    //Layout = null;
 }
 
 <hr />
@@ -21,17 +22,28 @@
 <h2> tarih: @tarih </h2>
 <h2> ders: @ders </h2>
 
+<hr />
 <br />
 
-<table>
-    <tr>
-        <td> Gün </td>
-        <td> Saat </td>
-        <td> Dakika </td>
+<table class="table table-striped bg-dark">
+    <tr style="color: green">
+        <td> <b>  Gün </b> </td>
+        <td> <b> Saat </b> </td>
+        <td> <b> Dakika </b> </td>
     </tr>
-    <tr>
+    <tr style="color: green" >
         <td> @DateTime.Now.Day </td>
-        <td> Saat </td>
-        <td> Dakika </td>
+        <td> @DateTime.Now.Hour </td>
+        <td> @DateTime.Now.Minute </td>
     </tr>
-</table>
+</table> 
+
+<br />
+
+@{
+    var meyve = "Domates";
+    @:En Sevdigim meyve <!--HTML--> <b> @meyve </b><!--C# asp-->
+} 
+<br/>
+
+
