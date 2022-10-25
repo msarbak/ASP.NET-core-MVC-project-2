@@ -48,7 +48,7 @@
 <br />
 <br />
 
-<h2>RAZOR <b>IF</b> ORNEGI</h2>
+<h2 style="font-family:Verdana; color: red">RAZOR <b>IF</b> ORNEGI</h2>
 <hr />
 @if(DateTime.IsLeapYear(DateTime.Now.Year)){
     //artik yil-> isLeapYear
@@ -62,9 +62,23 @@
 <br />
 <br />
 
-    <h2>RAZOR <b>FOR</b> ORNEGI</h2>
+    <h2 style="font-family:Verdana; color: red">RAZOR <b>FOR</b> ORNEGI</h2>
 <hr />
 
 @for(var i = 1; i < 11; i++){
     @i <br> <!--html e dondu direkt-->
 }
+    <br />
+    <br />
+    <br />
+    <br />
+
+<h2 style="font-family:Verdana; color: red">RAZOR <b>FOREACH</b> ORNEGI</h2>
+<hr />
+@{
+    string[] ogrenci = { "Huseyin", "Mehmet", "Seda", "Tea" };
+    string bulunacak = "Seda";
+    int sira = Array.IndexOf(ogrenci, bulunacak) + 1;
+    int sayi = ogrenci.Length;
+}
+<h3> @bulunacak, @sayi kisi arasinda @sira. siradadir </h3>
