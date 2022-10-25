@@ -44,12 +44,27 @@
     var meyve = "Domates";
     @:En Sevdigim meyve <!--HTML--> <b> @meyve </b><!--C# asp-->
 } 
-<br/>
+<br />
+<br />
+<br />
 
+<h2>RAZOR <b>IF</b> ORNEGI</h2>
+<hr />
 @if(DateTime.IsLeapYear(DateTime.Now.Year)){
     //artik yil-> isLeapYear
+    //ic kısım asp.net
     @:Artik Yil
 } else {
     @:Artik Yil <b>Degil!<b/>
 }
+<br />
+<br />
+<br />
+<br />
 
+    <h2>RAZOR <b>FOR</b> ORNEGI</h2>
+<hr />
+
+@for(var i = 1; i < 11; i++){
+    @i <br> <!--html e dondu direkt-->
+}
